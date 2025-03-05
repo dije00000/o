@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'ReadexPro';
+    src: url('https://path-to-your-font/ReadexPro-VariableFont_HEXP,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ReadexPro', sans-serif; /* الخط المخصص هنا */
+}
+
+body {
+    background: #1e1e2e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    height: 100vh;
+    text-align: center;
+    font-family: 'ReadexPro', sans-serif;
+    animation: fadeIn 2s ease-out;
+}
+
+.container {
+    background: #28293d;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+    width: 90%;
+    max-width: 400px;
+    opacity: 0; /* يبدأ العنصر مخفي */
+    animation: fadeIn 2s ease-out forwards; /* تأثير الفايد إن */
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #f8b400;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.prayer-times {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.prayer {
+    display: flex;
+    justify-content: space-between;
+    background: #393a56;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0; /* يبدأ العنصر مخفي */
+    animation: fadeIn 2s ease-out forwards 0.5s; /* تأثير مع تأخير */
+}
+
+.next-prayer {
+    margin-top: 15px;
+    background: #2c2c44;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #ffcc00;
+    opacity: 0; /* يبدأ العنصر مخفي */
+    animation: fadeIn 2s ease-out forwards 1s; /* تأثير مع تأخير */
+}
+
+/* أنيميشن الفايد إن */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* تحريك العنصر لأعلى عند البدء */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* إرجاع العنصر لمكانه الطبيعي */
+    }
+}
+
+/* تأثير عند الضغط على الطابع الشخصي */
+@keyframes bounceEffect {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    70% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* طابع شخصي */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer; /* لإظهار أنه قابل للنقر */
+    position: absolute;
+    bottom: 10px; /* وضعه في الأسفل */
+    width: 100%; /* ليأخذ كامل عرض الصفحة */
+}
+
+.developer-name {
+    font-weight: bold;
+    color: #4CAF50;
+}
+}

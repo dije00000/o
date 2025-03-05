@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>martin.dev!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>مواقيت الصلاة</h1>
+        <p id="currentTime">الوقت الحالي: --:--:--</p>
+        <div class="prayer-times">
+            <div class="prayer"><span>الفجر</span> <span id="fajr">--:--</span></div>
+            <div class="prayer"><span>الظهر</span> <span id="dhuhr">--:--</span></div>
+            <div class="prayer"><span>العصر</span> <span id="asr">--:--</span></div>
+            <div class="prayer"><span>المغرب</span> <span id="maghrib">--:--</span></div>
+            <div class="prayer"><span>العشاء</span> <span id="isha">--:--</span></div>
+            <div class="prayer"><span>صلاة الليل</span> <span id="nightPrayer">--:--</span></div>
+        </div>
+        <div class="next-prayer">
+            <p>الصلاة القادمة: <span id="nextPrayer">--</span> بعد <span id="remainingTime">--:--</span></p>
+        </div>
+    </div>
+    
+    <!-- إضافة طابع شخصي في أسفل الصفحة مع رابط واتساب -->
+    <footer>
+        <p>تم التطوير بواسطة</p>
+        <a href="https://wa.me/+96407839688444" target="_blank" class="developer-name">
+            Martin Dev
+        </a>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
